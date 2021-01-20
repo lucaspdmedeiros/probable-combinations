@@ -1,0 +1,38 @@
+Data cleaning: how do we went from the original to the cleaned interaction matrix files?
+
+1) Rows and columns without data were removed from the original files
+
+2) Removed blank rows and columns
+
+3) Removed dots from all species names
+
+4) Removed double spaces and blank spaces from beginning and end of species names
+
+5) Corrected some mispelled species names (e.g., Caesapinia sp, Spondia purpurea)
+
+6) Plant species with slightly different names were given the same name (e.g., Achatocarpus gracilis H Walt was changed to Achatocarpus gracilis)
+
+7) Herbivore codes with “ANTES” were changed (e.g., O114....ANTES.O460. was changed to O114 and O460 was changed to O114)
+
+8) After changing species names, their interactions were merged
+
+9) Plant species with no names were excluded (e.g., en blanco)
+
+10) The monthly data was aggregated for each plot/successional stage. That is, two species interacted in a given plot/successional stage if they interacted in any month sampled
+
+11) Matrices were saved separately. Successional stages were transformed as follows: 
+early became initial
+initial was removed
+late became middle
+forest became late
+
+12) Before plotting figures, plot numbers were transformed as follows: 
+plot 1 became 1
+plot 8 became 2
+plot 10 became 3
+plot 3 became 4
+plot 7 became 5
+plot 9 became 6
+plot 4 became 7
+plot 5 became 8
+plot 12 became 9
